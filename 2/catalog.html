@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Academy: Седона</title>
+  <base href="https://htmlacademy-adaptive.github.io/1572931-sedona-26/2/">
+</head>
+
+<body class="page__body">
+  <header class="main-header">
+    <nav class="main-header__navigation main-navigation">
+      <a class="main-navigation__logo-link" href="#">
+        <img class="main-navigation__logo-img" src="./img/sedona-logo.svg" alt="Логотип Седона." width="185"
+          height="96">
+      </a>
+
+      <ul class="main-navigation__list site-list">
+        <li class="site-list__item">
+          <a href="./index.html">Главная</a>
+        </li>
+        <li class="site-list__item site-list__item--active">
+          <a href="#">Фото и видео</a>
+        </li>
+        <li class="site-list__item">
+          <a href="./form.html">Форма отзыва</a>
+        </li>
+        <li class="site-list__item">
+          <a href="#">HTML academy</a>
+        </li>
+      </ul>
+      <button class="main-navigation__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+    </nav>
+  </header>
+
+  <main class="main-container">
+    <h1 class="visually-hidden">Галерея фото и видео о Седоне</h1>
+
+    <section class="gallery">
+      <h2 class="gallery__title">Фото и видео</h2>
+      <p class="gallery__text">
+        Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о
+        политике и экономике.
+      </p>
+
+      <ul class="gallery__list">
+        <li class="gallery__item">
+          <img class="gallery__img" src="./img/lonesome-road.jpg" alt="Одинокое шоссе на закате." width="280"
+            height="280">
+          <p class="gallery__item-name">Неродные просторы</p>
+          <p class="gallery__item-author">Автор фото: Борис</p>
+          <button class="gallery__item-like-btn">
+            <span class="visually-hidden">Поставить лайк фотографии</span>
+          </button>
+          <p class="gallery__item-likes">1350</p>
+        </li>
+
+        <li class="gallery__item">
+          <img class="gallery__img" src="./img/cactus.jpg" alt="Фотография кактуса на фоне гор." width="280"
+            height="280">
+          <p class="gallery__item-name">Местная растительность</p>
+          <p class="gallery__item-author">Автор фото: Сергей</p>
+          <button class="gallery__item-like-btn">
+            <span class="visually-hidden">Поставить лайк фотографии</span>
+          </button>
+          <p class="gallery__item-likes">143</p>
+        </li>
+
+        <li class="gallery__item">
+          <img class="gallery__img" src="./img/wavy-road.jpg" alt="Фотография извилистой дороги в лесах." width="280"
+            height="280">
+          <p class="gallery__item-name">Дорога на север</p>
+          <p class="gallery__item-author">Автор фото: Петр</p>
+          <button class="gallery__item-like-btn">
+            <span class="visually-hidden">Поставить лайк фотографии</span>
+          </button>
+          <p class="gallery__item-likes">96</p>
+        </li>
+
+        <li class="gallery__item">
+          <img class="gallery__img" src="./img/devils-bridge-gallery.jpg" alt="Мост дьявола." width="280" height="280">
+          <p class="gallery__item-name">Мост дьявола</p>
+          <p class="gallery__item-author">Автор фото: Антон</p>
+          <button class="gallery__item-like-btn">
+            <span class="visually-hidden">Поставить лайк фотографии</span>
+          </button>
+          <p class="gallery__item-likes">254</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="doubts">
+      <h2 class="doubts__title">Все еще сомневаетесь?</h2>
+      <p class="doubts__text">
+        Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!
+      </p>
+      <img class="doubts__video" src="./img/video-placeholder.jpg" alt="Заглушка для видео." width="280" height="177">
+    </section>
+  </main>
+
+  <footer class="main-footer">
+    <p class="main-footer__hashtag">#visitsedona</p>
+
+    <ul class="main-footer__navigation social-navigation">
+      <li class="social-navigation__item">
+        <a href="https://vk.com/htmlacademy" target="_blank">
+          <span class="visually-hidden">vk</span>
+        </a>
+      </li>
+
+      <li class="social-navigation__item">
+        <a href="https://t.me/htmlacademy" target="_blank">
+          <span class="visually-hidden">telegram</span>
+        </a>
+      </li>
+
+      <li class="social-navigation__item">
+        <a href="https://www.youtube.com/user/htmlacademyru" target="_blank">
+          <span class="visually-hidden">youtube</span>
+        </a>
+      </li>
+    </ul>
+
+    <div class="main-footer__developed copyright">
+      <p class="copyright__text">Разработано</p>
+      <svg class="copyright__img" width="27" height="35" viewBox="0 0 27 35" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9 12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1 18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4 20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z"
+          fill="black" />
+      </svg>
+    </div>
+  </footer>
+</body>
+
+</html>
