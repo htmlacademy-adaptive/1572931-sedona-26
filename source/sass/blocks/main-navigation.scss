@@ -1,0 +1,11 @@
+.main-navigation {
+  position: relative;
+  padding: 17px 0;
+
+  &__logo-link {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+  }
+}

@@ -1,0 +1,12 @@
+.welcome {
+  background-image: url("../../img/back-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #144950;
+  padding: 90px 0 85px;
+
+  &__img {
+    display: block;
+    margin: 0 auto;
+  }
+}
