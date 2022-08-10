@@ -9,4 +9,9 @@
     display: block;
     margin: 0 auto;
   }
+
+  &--small {
+    background-image: url("../../img/back-mobile-small.png");
+    padding: 52px 0 67px;
+  }
 }

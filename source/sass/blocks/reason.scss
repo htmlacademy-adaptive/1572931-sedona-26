@@ -13,10 +13,15 @@
 
   &__description {
     margin: 17px 0 0;
+    text-transform: uppercase;
   }
 
   &--primary {
     color: #ffffff;
     background-color: #81b3d2;
+  }
+
+  &--secondary {
+    background-color: #eeeeee;
   }
 }

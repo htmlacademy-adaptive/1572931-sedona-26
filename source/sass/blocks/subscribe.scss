@@ -1,0 +1,17 @@
+.subscribe {
+  padding: 39px 0 49px;
+  text-align: center;
+
+  &__title {
+    margin: 0;
+  }
+
+  &__description {
+    margin: 20px 0 0;
+    text-transform: uppercase;
+  }
+
+  &__button {
+    margin-top: 32px;
+  }
+}

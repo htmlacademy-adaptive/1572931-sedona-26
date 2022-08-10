@@ -1,0 +1,20 @@
+.review-form {
+  &__group-title {
+    text-align: center;
+  }
+
+  &__input-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__field {
+    background-color: #f2f2f2;
+    border: none;
+  }
+
+  &__message {
+    background-color: #f2f2f2;
+  }
+}

@@ -2,6 +2,7 @@
 
   &__header {
     padding: 32px 0;
+    text-align: center;
   }
 
   &__header-title {
@@ -18,6 +19,12 @@
     padding: 0;
   }
 
+  &__sublist {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
   &__img {
     display: block;
   }
@@ -25,6 +32,6 @@
   &__features-list {
     list-style: none;
     margin: 0;
-    padding: 23px 18px 52px;
+    padding: 23px 0 52px;
   }
 }

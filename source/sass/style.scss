@@ -1,3 +1,7 @@
+@use './fonts.scss';
+@use './global.scss';
+
+@use './blocks/title.scss';
 @use './blocks/page.scss';
 @use './blocks/main-container.scss';
 @use './blocks/main-navigation.scss';
@@ -9,3 +13,10 @@
 @use './blocks/reason.scss';
 @use './blocks/reasons.scss';
 @use './blocks/feature.scss';
+@use './blocks/subscribe.scss';
+@use './blocks/main-footer.scss';
+@use './blocks/social-navigation.scss';
+@use './blocks/gallery.scss';
+@use './blocks/doubts.scss';
+@use './blocks/review.scss';
+@use './blocks/review-form.scss';

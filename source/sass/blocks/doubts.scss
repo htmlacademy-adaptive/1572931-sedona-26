@@ -1,0 +1,17 @@
+.doubts {
+  padding: 17px 0 38px;
+  text-align: center;
+
+  &__title {
+    margin: 0;
+  }
+
+  &__text {
+    margin: 20px 0 0;
+  }
+
+  &__video {
+    display: block;
+    margin: 10px auto 0;
+  }
+}
