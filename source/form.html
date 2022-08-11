@@ -47,7 +47,7 @@
 
     <section class="review">
       <header class="review__header">
-        <h2 class="review__header-title">Оставьте свой отзыв</h2>
+        <h2 class="review__header-title title">Оставьте свой отзыв</h2>
         <p class="review__header-text">
           Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных
           вами достопримечательностях
@@ -56,7 +56,7 @@
 
       <form class="review-form" action="https://echo.htmlacademy.ru/" method="post">
         <fieldset class="review-form__group">
-          <legend class="review-form__group-title">Представьтесь:</legend>
+          <legend class="review-form__group-title title">Представьтесь:</legend>
 
           <ul class="review-form__input-list">
             <li class="review-form__input-item">
@@ -78,7 +78,7 @@
         </fieldset>
 
         <fieldset class="review-form__group">
-          <legend class="review-form__group-title">Контактная информация:</legend>
+          <legend class="review-form__group-title title">Контактная информация:</legend>
 
           <ul class="review-form__input-list">
             <li class="review-form__input-item">
@@ -95,41 +95,59 @@
         </fieldset>
 
         <fieldset class="review-form__group">
-          <legend class="review-form__group-title">Ваше общее впечатление:</legend>
+          <legend class="review-form__group-title title">Ваше общее впечатление:</legend>
 
-          <input class="review-form__impression-input" type="radio" id="positive" name="impression" value="positive"
-            checked>
-          <label class="review-form__impression-label" for="positive">Скорее положительное</label>
+          <ul class="review-form__input-list">
+            <li class="review-form__input-item">
+              <input class="review-form__control-input" type="radio" id="positive" name="impression" value="positive"
+                checked>
+              <label class="review-form__control-label" for="positive">Скорее положительное</label>
+            </li>
 
-          <input class="review-form__impression-input" type="radio" id="negative" name="impression" value="negative">
-          <label class="review-form__impression-label" for="negative">Скорее отрицательное</label>
+            <li class="review-form__input-item">
+              <input class="review-form__control-input" type="radio" id="negative" name="impression" value="negative">
+              <label class="review-form__control-label" for="negative">Скорее отрицательное</label>
+            </li>
 
-          <input class="review-form__impression-input" type="radio" id="not-sure" name="impression" value="not-sure">
-          <label class="review-form__impression-label" for="not-sure">Затрудняюсь ответить</label>
+            <li class="review-form__input-item">
+              <input class="review-form__control-input" type="radio" id="not-sure" name="impression" value="not-sure">
+              <label class="review-form__control-label" for="not-sure">Затрудняюсь ответить</label>
+            </li>
+          </ul>
         </fieldset>
 
         <fieldset class="review-form__group">
-          <legend class="review-form__group-title">Посещенные достопримечательности:</legend>
+          <legend class="review-form__group-title title">Посещенные достопримечательности:</legend>
 
-          <input class="review-form__impression-input" type="checkbox" id="devils-bridge" name="attraction"
-            value="devils-bridge" checked>
-          <label class="review-form__impression-label" for="devils-bridge">Мост Дьявола</label>
+          <ul class="review-form__input-list">
+            <li class="review-form__input-item">
+              <input class="review-form__control-input" type="checkbox" id="devils-bridge" name="attraction"
+                value="devils-bridge" checked>
+              <label class="review-form__control-label" for="devils-bridge">Мост Дьявола</label>
+            </li>
 
-          <input class="review-form__impression-input" type="checkbox" id="colocol-mountain" name="attraction"
-            value="colocol-mountain" checked>
-          <label class="review-form__impression-label" for="colocol-mountain">Гора-Колокол</label>
+            <li class="review-form__input-item">
+              <input class="review-form__control-input" type="checkbox" id="colocol-mountain" name="attraction"
+                value="colocol-mountain" checked>
+              <label class="review-form__control-label" for="colocol-mountain">Гора-Колокол</label>
+            </li>
 
-          <input class="review-form__impression-input" type="checkbox" id="slide-park" name="attraction"
-            value="slide-park" checked>
-          <label class="review-form__impression-label" for="slide-park">Слайд-парк</label>
+            <li class="review-form__input-item">
+              <input class="review-form__control-input" type="checkbox" id="slide-park" name="attraction"
+                value="slide-park" checked>
+              <label class="review-form__control-label" for="slide-park">Слайд-парк</label>
+            </li>
 
-          <input class="review-form__impression-input" type="checkbox" id="red-rocks" name="attraction"
-            value="red-rocks">
-          <label class="review-form__impression-label" for="red-rocks">Красные скалы</label>
+            <li class="review-form__input-item">
+              <input class="review-form__control-input" type="checkbox" id="red-rocks" name="attraction"
+                value="red-rocks">
+              <label class="review-form__control-label" for="red-rocks">Красные скалы</label>
+            </li>
+          </ul>
         </fieldset>
 
         <fieldset class="review-form__group">
-          <legend class="review-form__group-title">Опишите свои эмоции:</legend>
+          <legend class="review-form__group-title title">Опишите свои эмоции:</legend>
 
           <textarea class="review-form__message" name="message"
             placeholder="Опишите подробно все свои восторги "></textarea>
