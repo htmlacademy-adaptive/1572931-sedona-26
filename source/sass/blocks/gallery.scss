@@ -1,0 +1,43 @@
+.gallery {
+  padding: 37px 0 0;
+
+  &__title {
+    text-align: center;
+    margin: 0;
+  }
+
+  &__text {
+    text-align: center;
+    margin: 20px 0 0;
+    text-transform: uppercase;
+  }
+
+  &__list {
+    margin: 25px 0 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__item {
+    padding: 24px 20px 25px;
+  }
+
+  &__item-name {
+    margin: 15px 0 0;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+
+  &__item-author {
+    margin: 10px 0 0;
+  }
+
+  &__item-likes {
+    font-weight: 700;
+    margin: 0;
+  }
+
+  &__img {
+    display: block;
+  }
+}

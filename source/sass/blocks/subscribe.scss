@@ -1,0 +1,28 @@
+.subscribe {
+  padding: 39px 20px 49px;
+  text-align: center;
+
+  &__title {
+    margin: 0;
+  }
+
+  &__description {
+    margin: 20px 0 0;
+    text-transform: uppercase;
+  }
+
+  &__button {
+    margin-top: 32px;
+    background-color: #81b3d2;
+  }
+}
+
+@media (min-width: 768px) {
+  .subscribe {
+    padding: 39px 155px 49px;
+
+    &__button {
+      width: 100%;
+    }
+  }
+}
