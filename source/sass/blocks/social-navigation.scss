@@ -1,12 +1,16 @@
 .social-navigation {
   list-style: none;
+  margin: 35px 0 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
 
-  &__link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50px;
-    height: 50px;
-    background-color: #81b3d2;
-  }
+.social-navigation__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background-color: #81b3d2;
 }

@@ -2,6 +2,7 @@
   list-style: none;
   margin: 0;
   padding: 0;
+  display: none;
 
   &__link {
     font-size: 18px;
@@ -10,5 +11,24 @@
     text-decoration: none;
     color: #ffffff;
     background-color: #81b3d2;
+  }
+}
+
+@media (min-width: 768px) {
+  .site-navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__link {
+      font-size: 14px;
+      line-height: 21px;
+      color: #000000;
+      background-color: transparent;
+    }
+
+    &__link--active {
+      color: #766357;
+    }
   }
 }

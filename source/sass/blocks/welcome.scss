@@ -2,16 +2,25 @@
   background-image: url("../../img/back-mobile.jpg");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
   background-color: #144950;
-  padding: 90px 0 85px;
-
-  &__img {
-    display: block;
-    margin: 0 auto;
-  }
+  padding: 90px 20px 85px;
 
   &--small {
     background-image: url("../../img/back-mobile-small.png");
     padding: 52px 0 67px;
+  }
+}
+
+.welcome__img {
+  display: block;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .welcome {
+    background-image: url("../../img/back-tablet.jpg");
+    padding: 77px 0 91px;
+    background-position: center top;
   }
 }
