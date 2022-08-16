@@ -1,13 +1,19 @@
 .review__header {
-  padding: 37px 0 28px;
+  padding: 37px 20px 28px;
   text-align: center;
+}
 
-  &-title {
-    margin: 0;
-  }
+.review__header-title {
+  margin: 0;
+}
 
-  &-text {
-    margin: 20px 0 0;
-    text-transform: uppercase;
+.review__header-text {
+  margin: 20px 0 0;
+  text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+  .review__header {
+    padding: 64px 60px 102px;
   }
 }

@@ -1,18 +1,29 @@
 .doubts {
-  padding: 17px 0 38px;
+  padding: 17px 20px 0;
   text-align: center;
+}
 
-  &__title {
-    margin: 0;
+.doubts__title {
+  margin: 0;
+}
+
+.doubts__text {
+  margin: 20px 0 0;
+  text-transform: uppercase;
+}
+
+
+.doubts__video {
+  display: block;
+  margin: 10px auto 0;
+}
+
+@media (min-width: 768px) {
+  .doubts {
+    padding: 58px 60px 40px;
   }
 
-  &__text {
-    margin: 20px 0 0;
-    text-transform: uppercase;
-  }
-
-  &__video {
-    display: block;
-    margin: 10px auto 0;
+  .doubts__video {
+    margin-top: 66px;
   }
 }

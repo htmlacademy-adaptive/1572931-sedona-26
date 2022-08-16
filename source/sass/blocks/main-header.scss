@@ -1,3 +1,9 @@
 .main-header {
   padding: 0 18px;
 }
+
+@media (min-width: 768px) {
+  .main-header {
+    padding: 0;
+  }
+}

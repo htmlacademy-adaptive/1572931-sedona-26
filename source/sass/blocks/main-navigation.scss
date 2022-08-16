@@ -1,6 +1,9 @@
 .main-navigation {
   position: relative;
-  padding: 17px 0;
+  min-height: 56px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
   &__logo-link {
     position: absolute;
