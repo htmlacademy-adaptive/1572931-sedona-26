@@ -12,7 +12,7 @@
 <body class="page__body">
   <header class="main-header">
     <nav class="main-header__navigation main-navigation">
-      <a class="main-navigation__logo-link main-logo" href="#">
+      <a class="main-navigation__logo-link main-logo" href="./index.html">
         <img class="main-logo__img" src="./img/sedona-logo.svg" alt="Логотип Седона." width="185" height="96">
       </a>
 
@@ -31,7 +31,7 @@
         </li>
       </ul>
 
-      <button class="main-navigation__toggle" type="button">
+      <button class="main-navigation__toggle toggle-button" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
     </nav>
@@ -61,19 +61,21 @@
           </span>
 
           <ul class="form__input-list">
-            <li class="review-form__input-item">
+            <li class="form__input-item">
               <label class="form__label" for="name">Имя*:</label>
-              <input class="form__field" type="text" id="name" name="name" placeholder="Имя" required>
+              <input class="form__field input-text" type="text" id="name" name="name" placeholder="Имя" required>
             </li>
 
-            <li>
+            <li class="form__input-item">
               <label class="form__label" for="secondname">Фамилия*:</label>
-              <input class="form__field" type="text" id="secondname" name="secondname" placeholder="Фамилия" required>
+              <input class="form__field input-text" type="text" id="secondname" name="secondname" placeholder="Фамилия"
+                required>
             </li>
 
-            <li>
+            <li class="form__input-item">
               <label class="form__label" for="middlename">Отчество:</label>
-              <input class="form__field" type="text" id="middlename" name="middlename" placeholder="Отчество">
+              <input class="form__field input-text" type="text" id="middlename" name="middlename"
+                placeholder="Отчество">
             </li>
           </ul>
         </fieldset>
@@ -84,14 +86,16 @@
           </span>
 
           <ul class="form__input-list">
-            <li class="review-form__input-item">
+            <li class="form__input-item">
               <label class="form__label" for="tel">Контактный телефон*:</label>
-              <input class="form__field" type="tel" id="tel" name="tel" placeholder="Введите телефон" required>
+              <input class="form__field form__field--phone input-text" type="tel" id="tel" name="tel"
+                placeholder="Введите телефон" required>
             </li>
 
-            <li class="review-form__input-item">
+            <li class="form__input-item">
               <label class="form__label" for="email">Электронная почта*:</label>
-              <input class="form__field" type="email" id="email" name="email" placeholder="Введите e-mail" required>
+              <input class="form__field form__field--email input-text" type="email" id="email" name="email"
+                placeholder="Введите e-mail" required>
             </li>
           </ul>
         </fieldset>
@@ -220,6 +224,8 @@
       </svg>
     </div>
   </footer>
+
+  <script src="./js/app.js"></script>
 </body>
 
 </html>

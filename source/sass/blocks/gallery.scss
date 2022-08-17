@@ -73,8 +73,6 @@
   .gallery__list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    // grid-template-rows: 480px;
-    // grid-auto-rows: 347px;
   }
 
   .gallery__item {
@@ -96,5 +94,11 @@
 
   .gallery__like-wrapper {
     margin: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .gallery {
+    padding: 66px 0 0;
   }
 }

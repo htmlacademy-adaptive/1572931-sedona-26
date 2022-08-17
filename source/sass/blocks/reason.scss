@@ -3,19 +3,6 @@
   text-align: center;
   padding: 54px 15px 40px;
 
-  &__title {
-    margin: 0;
-  }
-
-  &__number {
-    margin: 11px 0 0;
-  }
-
-  &__description {
-    margin: 17px 0 0;
-    text-transform: uppercase;
-  }
-
   &--primary {
     color: #ffffff;
     background-color: #81b3d2;
@@ -23,5 +10,24 @@
 
   &--secondary {
     background-color: #eeeeee;
+  }
+}
+
+.reason__title {
+  margin: 0;
+}
+
+.reason__number {
+  margin: 11px 0 0;
+}
+
+.reason__description {
+  margin: 17px 0 0;
+  text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+  .reason {
+    min-height: 256px;
   }
 }

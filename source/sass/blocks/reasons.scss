@@ -40,19 +40,30 @@
 }
 
 @media (min-width: 768px) {
-  .reasons {
-    &__header {
-      padding: 32px 140px;
-    }
+  .reasons__header {
+    padding: 32px 140px;
+  }
 
-    &__list {
-      display: flex;
-      flex-direction: column;
-    }
+  .reasons__item {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
 
-    &__item {
-      // display: grid;
-      // grid-template-columns: repeat(3, 256px);
-    }
+  .reasons__img-wrapper {
+    grid-column: span 2;
+  }
+
+  .reasons__features-list {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0;
+    gap: 0;
+  }
+
+  .reasons__sublist {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
   }
 }

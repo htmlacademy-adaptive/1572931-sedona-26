@@ -5,7 +5,6 @@
 @use "./blocks/main-container.scss";
 @use "./blocks/main-navigation.scss";
 @use "./blocks/main-logo.scss";
-@use "./blocks/main-header.scss";
 @use "./blocks/site-navigation.scss";
 @use "./blocks/visually-hidden.scss";
 @use "./blocks/welcome.scss";
@@ -19,6 +18,7 @@
 @use "./blocks/doubts.scss";
 @use "./blocks/review.scss";
 @use "./blocks/form.scss";
-@use "./blocks/container.scss";
 @use "./blocks/map.scss";
 @use "./blocks/copyright.scss";
+@use "./blocks/toggle-button.scss";
+@use "./blocks/input-text.scss";
