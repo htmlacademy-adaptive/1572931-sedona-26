@@ -23,6 +23,7 @@
 .gallery__item {
   padding: 25px 0 25px;
   border-bottom: 1px solid #e5e5e5;
+  position: relative;
 }
 
 .gallery__item-like-btn {
@@ -100,5 +101,21 @@
 @media (min-width: 1200px) {
   .gallery {
     padding: 66px 0 0;
+  }
+
+  .gallery__list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .gallery__item:first-child {
+    grid-column: span 3;
+  }
+
+  .gallery__item-info {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: #ffffff;
   }
 }

@@ -10,7 +10,12 @@
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  background-color: #ffffff;
+  background-color: #f2f2f2;
   max-width: 1200px;
   margin: 0 auto;
+}
+
+.page__wrapper {
+  background-color: #ffffff;
+  box-shadow: 0 0 15px rgb(0 0 0 / 20%);
 }
