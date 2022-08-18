@@ -142,7 +142,7 @@
 }
 
 .welcome {
-  background-image: url("../../img/back-mobile.jpg");
+  background-image: url("../img/back-mobile.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -150,7 +150,7 @@
   padding: 90px 20px 85px;
 }
 .welcome--small {
-  background-image: url("../../img/back-mobile-small.png");
+  background-image: url("../img/back-mobile-small.png");
   padding: 52px 0 67px;
 }
 
@@ -161,7 +161,7 @@
 
 @media (min-width: 768px) {
   .welcome {
-    background-image: url("../../img/back-tablet.jpg");
+    background-image: url("../img/back-tablet.jpg");
     padding: 77px 0 91px;
     background-position: center top;
   }
@@ -273,13 +273,13 @@
   background-size: 40px 40px;
 }
 .feature--housing {
-  background-image: url("../../img/icons/feature-housing.svg");
+  background-image: url("../img/icons/feature-housing.svg");
 }
 .feature--burger {
-  background-image: url("../../img/icons/feature-burger.svg");
+  background-image: url("../img/icons/feature-burger.svg");
 }
 .feature--present {
-  background-image: url("../../img/icons/feature-present.svg");
+  background-image: url("../img/icons/feature-present.svg");
 }
 
 .feature__title {
@@ -600,7 +600,7 @@
   right: 0;
   bottom: 0;
   background-repeat: no-repeat;
-  background-image: url("../../img/icons/phone.svg");
+  background-image: url("../img/icons/phone.svg");
   background-position: center;
 }
 .form__label--email::after {
@@ -612,7 +612,7 @@
   right: 0;
   bottom: 0;
   background-repeat: no-repeat;
-  background-image: url("../../img/icons/mail.svg");
+  background-image: url("../img/icons/mail.svg");
   background-position: center;
 }
 
