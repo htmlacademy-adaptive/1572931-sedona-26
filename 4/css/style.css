@@ -35,9 +35,14 @@
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  background-color: #ffffff;
+  background-color: #f2f2f2;
   max-width: 1200px;
   margin: 0 auto;
+}
+
+.page__wrapper {
+  background-color: #ffffff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
 .main-container {
@@ -409,6 +414,7 @@
 .gallery__item {
   padding: 25px 0 25px;
   border-bottom: 1px solid #e5e5e5;
+  position: relative;
 }
 
 .gallery__item-like-btn {
@@ -485,6 +491,22 @@
 @media (min-width: 1200px) {
   .gallery {
     padding: 66px 0 0;
+  }
+
+  .gallery__list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .gallery__item:first-child {
+    grid-column: span 3;
+  }
+
+  .gallery__item-info {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: #ffffff;
   }
 }
 .doubts {
@@ -567,18 +589,42 @@
   text-transform: uppercase;
   color: #333333;
   display: block;
+  position: relative;
+}
+.form__label--phone::after {
+  content: "";
+  position: absolute;
+  width: 58px;
+  height: 58px;
+  background-color: #e6e6e6;
+  right: 0;
+  bottom: 0;
+  background-repeat: no-repeat;
+  background-image: url("../../img/icons/phone.svg");
+  background-position: center;
+}
+.form__label--email::after {
+  content: "";
+  position: absolute;
+  width: 58px;
+  height: 58px;
+  background-color: #e6e6e6;
+  right: 0;
+  bottom: 0;
+  background-repeat: no-repeat;
+  background-image: url("../../img/icons/mail.svg");
+  background-position: center;
+}
+
+.form__label-text {
+  display: block;
+  padding: 0 16px;
 }
 
 .form__field {
   width: 100%;
   padding: 16px;
   background-repeat: no-repeat;
-}
-.form__field--phone {
-  background-image: url("../../img/icons/phone.svg");
-}
-.form__field--email {
-  background-image: url("../../img/icons/mail.svg");
 }
 
 .review-form__control-label {
@@ -607,6 +653,9 @@
 .review-form__clarification {
   font-size: 12px;
   color: rgba(51, 51, 51, 0.6);
+  text-align: right;
+  text-transform: uppercase;
+  margin: 3px 0 0;
 }
 
 @media (min-width: 768px) {
@@ -615,6 +664,10 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 50px 85px;
+  }
+
+  .review-form__message {
+    height: 160px;
   }
 
   .form__group {
@@ -658,6 +711,19 @@
   border: none;
   font-family: inherit;
   font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.button {
+  width: 100%;
+  border: none;
+  color: #ffffff;
+  background-color: #81b3d2;
+  text-transform: uppercase;
+  padding: 19px 32px 14px;
+  font-family: inherit;
+  font-size: 21px;
   line-height: 26px;
   font-weight: 700;
 }
