@@ -10,10 +10,10 @@
 </head>
 
 <body class="page__body">
-  <div class="page__wrapper container">
+  <div class="page__wrapper ">
     <header class="main-header">
       <nav class="main-header__navigation main-navigation">
-        <a class="main-navigation__logo-link main-logo" href="#">
+        <a class="main-navigation__logo-link main-logo" href="./index.html">
           <img class="main-logo__img" src="./img/sedona-logo.svg" alt="Логотип Седона." width="185" height="96">
         </a>
 
@@ -32,7 +32,7 @@
           </li>
         </ul>
 
-        <button class="main-navigation__toggle" type="button">
+        <button class="main-navigation__toggle toggle-button" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
       </nav>
@@ -57,65 +57,69 @@
           <li class="gallery__item">
             <img class="gallery__img" src="./img/lonesome-road.jpg" alt="Одинокое шоссе на закате." width="280"
               height="280">
-            <p class="gallery__item-name">Неродные просторы</p>
-            <p class="gallery__item-author">Автор фото: Борис</p>
-            <button class="gallery__item-like-btn">
-              <span class="visually-hidden">Поставить лайк фотографии</span>
-              <svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path opacity="0.3"
-                  d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z"
-                  fill="black" />
-              </svg>
-            </button>
-            <p class="gallery__item-likes">1350</p>
+            <div class="gallery__item-info">
+              <div class="gallery__item-description">
+                <p class="gallery__item-name">Неродные просторы</p>
+                <p class="gallery__item-author">Автор фото: Борис</p>
+              </div>
+              <div class="gallery__like-wrapper">
+                <a class="gallery__item-like-btn">
+                  <span class="visually-hidden">Поставить лайк фотографии</span>
+                </a>
+                <p class="gallery__item-likes">1350</p>
+              </div>
+            </div>
           </li>
 
           <li class="gallery__item">
             <img class="gallery__img" src="./img/cactus.jpg" alt="Фотография кактуса на фоне гор." width="280"
               height="280">
-            <p class="gallery__item-name">Местная растительность</p>
-            <p class="gallery__item-author">Автор фото: Сергей</p>
-            <button class="gallery__item-like-btn">
-              <span class="visually-hidden">Поставить лайк фотографии</span>
-              <svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path opacity="0.3"
-                  d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z"
-                  fill="black" />
-              </svg>
-            </button>
-            <p class="gallery__item-likes">143</p>
+            <div class="gallery__item-info">
+              <div class="gallery__item-description">
+                <p class="gallery__item-name">Местная растительность</p>
+                <p class="gallery__item-author">Автор фото: Сергей</p>
+              </div>
+              <div class="gallery__like-wrapper">
+                <a class="gallery__item-like-btn">
+                  <span class="visually-hidden">Поставить лайк фотографии</span>
+                </a>
+                <p class="gallery__item-likes">143</p>
+              </div>
+            </div>
           </li>
 
           <li class="gallery__item">
             <img class="gallery__img" src="./img/wavy-road.jpg" alt="Фотография извилистой дороги в лесах." width="280"
               height="280">
-            <p class="gallery__item-name">Дорога на север</p>
-            <p class="gallery__item-author">Автор фото: Петр</p>
-            <button class="gallery__item-like-btn">
-              <span class="visually-hidden">Поставить лайк фотографии</span>
-              <svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path opacity="0.3"
-                  d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z"
-                  fill="black" />
-              </svg>
-            </button>
-            <p class="gallery__item-likes">96</p>
+            <div class="gallery__item-info">
+              <div class="gallery__item-description">
+                <p class="gallery__item-name">Дорога на север</p>
+                <p class="gallery__item-author">Автор фото: Петр</p>
+              </div>
+              <div class="gallery__like-wrapper">
+                <a class="gallery__item-like-btn">
+                  <span class="visually-hidden">Поставить лайк фотографии</span>
+                </a>
+                <p class="gallery__item-likes">96</p>
+              </div>
+            </div>
           </li>
 
           <li class="gallery__item">
             <img class="gallery__img" src="./img/devils-bridge-gallery.jpg" alt="Мост дьявола." width="280"
               height="280">
-            <p class="gallery__item-name">Мост дьявола</p>
-            <p class="gallery__item-author">Автор фото: Антон</p>
-            <button class="gallery__item-like-btn">
-              <span class="visually-hidden">Поставить лайк фотографии</span>
-              <svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path opacity="0.3"
-                  d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z"
-                  fill="black" />
-              </svg>
-            </button>
-            <p class="gallery__item-likes">254</p>
+            <div class="gallery__item-info">
+              <div class="gallery__item-description">
+                <p class="gallery__item-name">Мост дьявола</p>
+                <p class="gallery__item-author">Автор фото: Антон</p>
+              </div>
+              <div class="gallery__like-wrapper">
+                <a class="gallery__item-like-btn">
+                  <span class="visually-hidden">Поставить лайк фотографии</span>
+                </a>
+                <p class="gallery__item-likes">254</p>
+              </div>
+            </div>
           </li>
         </ul>
       </section>
@@ -182,6 +186,7 @@
       </div>
     </footer>
   </div>
+  <script src="./js/app.js"></script>
 </body>
 
 </html>

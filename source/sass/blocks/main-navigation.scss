@@ -1,28 +1,25 @@
 .main-navigation {
   position: relative;
-  padding: 17px 0;
+  min-height: 56px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 18px;
+}
 
-  &__logo-link {
-    position: absolute;
-    left: 50%;
-    top: 0;
-    transform: translateX(-50%);
-  }
+.main-navigation__logo-link {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+}
 
-  &__toggle {
-    display: block;
-    margin-left: auto;
-    width: 23px;
-    height: 22px;
-    background-color: #81b3d2;
-    border: none;
-  }
+.main-navigation__toggle {
+  margin-left: auto;
 }
 
 @media (min-width: 768px) {
-  .main-navigation {
-    &__toggle {
-      display: none;
-    }
+  .main-navigation__toggle {
+    visibility: hidden;
   }
 }

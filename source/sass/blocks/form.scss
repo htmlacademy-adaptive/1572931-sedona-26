@@ -1,0 +1,126 @@
+.form {
+  padding: 0 20px 24px;
+}
+
+.form__group {
+  padding: 24px 0 40px;
+  margin: 0;
+  border: none;
+  border-top: 1px solid #e5e5e5;
+}
+
+.form__group-title {
+  text-align: center;
+}
+
+.form__input-list {
+  margin: 20px 0 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form__label {
+  text-transform: uppercase;
+  color: #333333;
+  display: block;
+  position: relative;
+
+  &--phone::after {
+    content: "";
+    position: absolute;
+    width: 58px;
+    height: 58px;
+    background-color: #e6e6e6;
+    right: 0;
+    bottom: 0;
+    background-repeat: no-repeat;
+    background-image: url("../img/icons/phone.svg");
+    background-position: center;
+  }
+
+  &--email::after {
+    content: "";
+    position: absolute;
+    width: 58px;
+    height: 58px;
+    background-color: #e6e6e6;
+    right: 0;
+    bottom: 0;
+    background-repeat: no-repeat;
+    background-image: url("../img/icons/mail.svg");
+    background-position: center;
+  }
+}
+
+.form__label-text {
+  display: block;
+  padding: 0 16px;
+}
+
+.form__field {
+  width: 100%;
+  padding: 16px;
+  background-repeat: no-repeat;
+}
+
+.review-form__control-label {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.review-form__message {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  font-family: inherit;
+  background-color: #f2f2f2;
+  margin-top: 20px;
+  padding: 16px;
+  width: 100%;
+  height: 150px;
+  resize: none;
+  border: none;
+
+  &::placeholder {
+    color: rgba(0, 0, 0, 0.3);
+  }
+}
+
+.review-form__clarification {
+  font-size: 12px;
+  color: rgba(51, 51, 51, 0.6);
+  text-align: right;
+  text-transform: uppercase;
+  margin: 3px 0 0;
+}
+
+@media (min-width: 768px) {
+  .form {
+    padding: 0 60px 64px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px 85px;
+  }
+
+  .review-form__message {
+    height: 160px;
+  }
+
+  .form__group {
+    border: none;
+  }
+
+  .form__group:nth-child(n+3) {
+    grid-column: span 2;
+  }
+}
+
+@media (min-width: 1200px) {
+  .form {
+    padding: 0 120px 64px;
+  }
+}

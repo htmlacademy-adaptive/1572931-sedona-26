@@ -1,12 +1,48 @@
 .feature {
   padding: 8px 0 0 47px;
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: 40px 40px;
 
-  &__title {
-    margin: 0;
+  &--housing {
+    background-image: url("../img/icons/feature-housing.svg");
   }
 
-  &__description {
-    margin: 16px 0 0;
-    text-transform: uppercase;
+  &--burger {
+    background-image: url("../img/icons/feature-burger.svg");
+  }
+
+  &--present {
+    background-image: url("../img/icons/feature-present.svg");
+  }
+}
+
+.feature__title {
+  margin: 0;
+}
+
+.feature__description {
+  margin: 16px 0 0;
+  text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+  .feature {
+    padding: 159px 30px 30px;
+    min-height: 330px;
+    background-position: center 60px;
+    text-align: center;
+
+    &--housing {
+      background-size: 75px 72px;
+    }
+
+    &--burger {
+      background-size: 76px 68px;
+    }
+
+    &--present {
+      background-size: 64px 75px;
+    }
   }
 }

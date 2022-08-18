@@ -1,43 +1,121 @@
 .gallery {
-  padding: 37px 0 0;
+  padding: 37px 20px 0;
+}
 
-  &__title {
-    text-align: center;
-    margin: 0;
+.gallery__title {
+  text-align: center;
+  margin: 0;
+}
+
+.gallery__text {
+  text-align: center;
+  margin: 20px 0 0;
+  text-transform: uppercase;
+}
+
+.gallery__list {
+  margin: 25px 0 0;
+  padding: 0;
+  list-style: none;
+  border-top: 1px solid #e5e5e5;
+}
+
+.gallery__item {
+  padding: 25px 0 25px;
+  border-bottom: 1px solid #e5e5e5;
+  position: relative;
+}
+
+.gallery__item-like-btn {
+  display: block;
+  width: 23px;
+  height: 21px;
+  background-image: url("../img/icons/like-icon.svg");
+}
+
+.gallery__like-wrapper {
+  margin-top: 10px;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.gallery__item-info {
+  padding-top: 15px;
+}
+
+.gallery__item-name {
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.gallery__item-author {
+  margin: 5px 0 0;
+}
+
+.gallery__item-likes {
+  font-weight: 700;
+  margin: 5px 0 0;
+}
+
+.gallery__img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .gallery {
+    padding: 66px 60px 0;
   }
 
-  &__text {
-    text-align: center;
-    margin: 20px 0 0;
-    text-transform: uppercase;
+  .gallery__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
 
-  &__list {
-    margin: 25px 0 0;
+  .gallery__item {
     padding: 0;
-    list-style: none;
+    border: none;
+    background-color: #f2f2f2;
   }
 
-  &__item {
-    padding: 24px 20px 25px;
+  .gallery__item:first-child {
+    grid-column: span 2;
   }
 
-  &__item-name {
-    margin: 15px 0 0;
-    text-transform: uppercase;
-    font-weight: 700;
+  .gallery__item-info {
+    padding: 20px 20px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
-  &__item-author {
-    margin: 10px 0 0;
-  }
-
-  &__item-likes {
-    font-weight: 700;
+  .gallery__like-wrapper {
     margin: 0;
   }
+}
 
-  &__img {
-    display: block;
+@media (min-width: 1200px) {
+  .gallery {
+    padding: 66px 0 0;
+  }
+
+  .gallery__list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .gallery__item:first-child {
+    grid-column: span 3;
+  }
+
+  .gallery__item-info {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: #ffffff;
   }
 }
