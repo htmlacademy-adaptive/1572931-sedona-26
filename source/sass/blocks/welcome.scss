@@ -1,5 +1,5 @@
 .welcome {
-  background-image: url("../../img/back-mobile.jpg");
+  background-image: url("../img/back-mobile.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -7,7 +7,7 @@
   padding: 90px 20px 85px;
 
   &--small {
-    background-image: url("../../img/back-mobile-small.png");
+    background-image: url("../img/back-mobile-small.png");
     padding: 52px 0 67px;
   }
 }
@@ -19,7 +19,7 @@
 
 @media (min-width: 768px) {
   .welcome {
-    background-image: url("../../img/back-tablet.jpg");
+    background-image: url("../img/back-tablet.jpg");
     padding: 77px 0 91px;
     background-position: center top;
   }
