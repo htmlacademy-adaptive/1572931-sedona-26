@@ -71,6 +71,10 @@
     padding: 66px 60px 0;
   }
 
+  .gallery__title {
+    font-size: 30px;
+  }
+
   .gallery__list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);

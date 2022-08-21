@@ -11,6 +11,7 @@
 
 .form__group-title {
   text-align: center;
+  padding: 0;
 }
 
 .form__input-list {
@@ -119,6 +120,7 @@
 }
 
 .review-form__message {
+  display: block;
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
@@ -158,10 +160,34 @@
 
   .form__group {
     border: none;
+    padding: 0;
   }
 
   .form__group:nth-child(n+3) {
     grid-column: span 2;
+  }
+
+  .form__group:nth-child(n+3) .form__group-title {
+    position: relative;
+
+    &::after,
+    &::before {
+      content: "";
+      width: 123px;
+      height: 1px;
+      background-color: #dbdbdb;
+      position: absolute;
+    }
+
+    &::after {
+      right: 0;
+      top: 50%;
+    }
+
+    &::before {
+      left: 0;
+      top: 50%;
+    }
   }
 
   .form__group--radio .form__input-list {
@@ -175,6 +201,14 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 16px 32px;
+  }
+
+  .form__group-title {
+    font-size: 21px;
+  }
+
+  .review-form__clarification {
+    margin-top: 23px;
   }
 }
 

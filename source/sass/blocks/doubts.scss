@@ -15,12 +15,16 @@
 
 .doubts__video {
   display: block;
-  margin: 10px auto 0;
+  margin: 38px auto 0;
 }
 
 @media (min-width: 768px) {
   .doubts {
     padding: 58px 60px 40px;
+  }
+
+  .doubts__title {
+    font-size: 30px;
   }
 
   .doubts__video {
