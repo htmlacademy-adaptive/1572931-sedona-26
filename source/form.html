@@ -12,7 +12,8 @@
 <body class="page__body">
   <div class="page__wrapper ">
     <header class="main-header">
-      <nav class="main-header__navigation main-navigation">
+      <!-- main-navigation--closed | main-navigation--opened | main-nav--no-js -->
+      <nav class="main-header__navigation main-navigation main-navigation--closed main-navigation--nojs">
         <a class="main-navigation__logo-link main-logo" href="./index.html">
           <img class="main-logo__img" src="./img/sedona-logo.svg" alt="Логотип Седона." width="185" height="96">
         </a>
@@ -111,58 +112,60 @@
             </ul>
           </fieldset>
 
-          <fieldset class="form__group">
+          <fieldset class="form__group form__group--radio">
             <span>
               <legend class="form__group-title title">Ваше общее впечатление:</legend>
             </span>
 
             <ul class="form__input-list">
-              <li class="review-form__input-item">
-                <input class="review-form__control-input" type="radio" id="positive" name="impression" value="positive"
-                  checked>
-                <label class="review-form__control-label" for="positive">Скорее положительное</label>
+              <li class="form__input-item">
+                <input class="form__control-input form__radio visually-hidden" type="radio" id="positive"
+                  name="impression" value="positive" checked>
+                <label class="form__control-label" for="positive">Скорее положительное</label>
               </li>
 
-              <li class="review-form__input-item">
-                <input class="review-form__control-input" type="radio" id="negative" name="impression" value="negative">
-                <label class="review-form__control-label" for="negative">Скорее отрицательное</label>
+              <li class="form__input-item">
+                <input class="form__control-input form__radio visually-hidden" type="radio" id="negative"
+                  name="impression" value="negative">
+                <label class="form__control-label" for="negative">Скорее отрицательное</label>
               </li>
 
-              <li class="review-form__input-item">
-                <input class="review-form__control-input" type="radio" id="not-sure" name="impression" value="not-sure">
-                <label class="review-form__control-label" for="not-sure">Затрудняюсь ответить</label>
+              <li class="form__input-item">
+                <input class="form__control-input form__radio visually-hidden" type="radio" id="not-sure"
+                  name="impression" value="not-sure">
+                <label class="form__control-label" for="not-sure">Затрудняюсь ответить</label>
               </li>
             </ul>
           </fieldset>
 
-          <fieldset class="form__group">
+          <fieldset class="form__group form__group--checkbox">
             <span>
               <legend class="form__group-title title">Посещенные достопримечательности:</legend>
             </span>
 
             <ul class="form__input-list">
-              <li class="review-form__input-item">
-                <input class="review-form__control-input" type="checkbox" id="devils-bridge" name="attraction"
-                  value="devils-bridge" checked>
-                <label class="review-form__control-label" for="devils-bridge">Мост Дьявола</label>
+              <li class="form__input-item">
+                <input class="form__control-input form__checkbox visually-hidden" type="checkbox" id="devils-bridge"
+                  name="attraction" value="devils-bridge" checked>
+                <label class="form__control-label" for="devils-bridge">Мост Дьявола</label>
               </li>
 
-              <li class="review-form__input-item">
-                <input class="review-form__control-input" type="checkbox" id="colocol-mountain" name="attraction"
-                  value="colocol-mountain" checked>
-                <label class="review-form__control-label" for="colocol-mountain">Гора-Колокол</label>
+              <li class="form__input-item">
+                <input class="form__control-input form__checkbox visually-hidden" type="checkbox" id="colocol-mountain"
+                  name="attraction" value="colocol-mountain" checked>
+                <label class="form__control-label" for="colocol-mountain">Гора-Колокол</label>
               </li>
 
-              <li class="review-form__input-item">
-                <input class="review-form__control-input" type="checkbox" id="slide-park" name="attraction"
-                  value="slide-park" checked>
-                <label class="review-form__control-label" for="slide-park">Слайд-парк</label>
+              <li class="form__input-item">
+                <input class="form__control-input form__checkbox visually-hidden" type="checkbox" id="slide-park"
+                  name="attraction" value="slide-park" checked>
+                <label class="form__control-label" for="slide-park">Слайд-парк</label>
               </li>
 
-              <li class="review-form__input-item">
-                <input class="review-form__control-input" type="checkbox" id="red-rocks" name="attraction"
-                  value="red-rocks">
-                <label class="review-form__control-label" for="red-rocks">Красные скалы</label>
+              <li class="form__input-item">
+                <input class="form__control-input form__checkbox visually-hidden" type="checkbox" id="red-rocks"
+                  name="attraction" value="red-rocks">
+                <label class="form__control-label" for="red-rocks">Красные скалы</label>
               </li>
             </ul>
           </fieldset>

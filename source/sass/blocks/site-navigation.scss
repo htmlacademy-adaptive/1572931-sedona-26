@@ -4,13 +4,9 @@
   padding: 0;
   position: absolute;
   top: 0;
-  left: -100%;
+  left: 0;
   width: 100%;
   transition: all 0.3s;
-
-  &--active {
-    left: 0;
-  }
 }
 
 .site-navigation__link {
@@ -50,5 +46,12 @@
     &:nth-child(3) {
       margin-left: auto;
     }
+  }
+}
+
+@media (max-width: 767px) {
+  .site-navigation__link {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(1, 1, 1, 0.2);
   }
 }

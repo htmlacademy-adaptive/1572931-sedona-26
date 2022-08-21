@@ -66,10 +66,56 @@
   background-repeat: no-repeat;
 }
 
-.review-form__control-label {
+.form__control-label {
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
+
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.form__radio + .form__control-label::before {
+  content: "";
+  width: 46px;
+  height: 46px;
+  display: inline-block;
+  left: 0;
+  top: 0;
+  border-radius: 50%;
+  background-color: #f2f2f2;
+  flex-shrink: 0;
+}
+
+.form__radio:checked + .form__control-label::after {
+  content: "";
+  position: absolute;
+  background-color: #000000;
+  width: 16px;
+  height: 16px;
+  top: 15px;
+  left: 15px;
+  border-radius: 50%;
+}
+
+.form__checkbox + .form__control-label::before {
+  content: "";
+  width: 46px;
+  height: 46px;
+  display: inline-block;
+  left: 0;
+  top: 0;
+  border-radius: 4px;
+  background-color: #f2f2f2;
+  flex-shrink: 0;
+}
+
+.form__checkbox:checked + .form__control-label::before {
+  background-image: url("../img/icons/tick.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .review-form__message {
@@ -117,10 +163,35 @@
   .form__group:nth-child(n+3) {
     grid-column: span 2;
   }
+
+  .form__group--radio .form__input-list {
+    padding: 0 36px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .form__group--checkbox .form__input-list {
+    padding: 0 85px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px 32px;
+  }
 }
 
 @media (min-width: 1200px) {
   .form {
     padding: 0 120px 64px;
+  }
+
+  .form__group--radio .form__input-list {
+    padding: 0 53px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+  }
+
+  .form__group--checkbox .form__input-list {
+    padding: 0 44px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px 0;
   }
 }
