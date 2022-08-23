@@ -44,8 +44,11 @@
 
       <section class="welcome">
         <h2 class="visually-hidden">Добро пожаловать в Седону!</h2>
-        <img class="welcome__img" src="./img/welcome-text.svg" alt="Добро пожаловать в Седону." width="282"
-          height="214">
+        <picture>
+          <source media="(min-width: 768px)" srcset="./img/welcome-text-big.svg">
+          <img class="welcome__img" src="./img/welcome-text-small.svg" alt="Добро пожаловать в Седону." width="282"
+            height="214">
+        </picture>
       </section>
 
       <section class="reasons">
@@ -65,7 +68,14 @@
               <p class="reason__description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
             </div>
             <div class="reasons__img-wrapper">
-              <img class="reasons__img" src="./img/sedona-motels.jpg" alt="Мотели в Седоне." width="320" height="260">
+              <picture>
+                <source media="(min-width: 1200px)"
+                  srcset="./img/sedona-motels-desktop.jpg 1x, ./img/sedona-motels-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)"
+                  srcset="./img/sedona-motels-tablet.jpg 1x, ./img/sedona-motels-tablet@2x.jpg 2x">
+                <img class="reasons__img" src="./img/sedona-motels-mobile.jpg"
+                  srcset="./img/sedona-motels-mobile@2x.jpg 2x" alt="Мотели в Седоне." width="320" height="260">
+              </picture>
             </div>
 
             <ul class="reasons__features-list">
@@ -88,7 +98,14 @@
 
           <li class="reasons__item">
             <div class="reasons__img-wrapper">
-              <img class="reasons__img" src="./img/devils-bridge.jpg" alt="Мост дьявола." width="320" height="260">
+              <picture>
+                <source media="(min-width: 1200px)"
+                  srcset="./img/devils-bridge-desktop.jpg 1x, ./img/devils-bridge-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)"
+                  srcset="./img/devils-bridge-tablet.jpg 1x, ./img/devils-bridge-tablet@2x.jpg 2x">
+                <img class="reasons__img" src="./img/devils-bridge-mobile.jpg"
+                  srcset="./img/devils-bridge-mobile@2x.jpg 2x" alt="Мост дьявола." width="320" height="260">
+              </picture>
             </div>
             <div class="reason reason--primary">
               <h3 class="reason__title title">Там есть мост дьявола</h3>
@@ -97,19 +114,19 @@
             </div>
 
             <ul class="reasons__sublist">
-              <li class="reason reason--secondary">
+              <li class="reason reasons__sublist-item reason--secondary">
                 <h4 class="reason__title title">Небольшая площадь</h4>
                 <p class="reason__number">— №3 —</p>
                 <p class="reason__description">Все интересные места находятся очень близко</p>
               </li>
 
-              <li class="reason reason--secondary">
+              <li class="reason reasons__sublist-item reason--secondary">
                 <h4 class="reason__title title">Красивая дорога</h4>
                 <p class="reason__number">— №4 —</p>
                 <p class="reason__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
               </li>
 
-              <li class="reason reason--secondary">
+              <li class="reason reasons__sublist-item reason--secondary">
                 <h4 class="reason__title title">Мало туристов</h4>
                 <p class="reason__number">— №5 —</p>
                 <p class="reason__description">Большинство едет в Гранд Каньон и толпится там</p>
@@ -124,7 +141,7 @@
         <p class="subscribe__description">
           Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне
         </p>
-        <button class="subscribe__button button" type="button">Найти гостиницу</button>
+        <a class="subscribe__button button" href="#">Найти гостиницу</a>
       </section>
 
       <section class="map">

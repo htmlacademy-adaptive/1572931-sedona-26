@@ -1,5 +1,5 @@
 .form {
-  padding: 0 20px 24px;
+  padding: 0 20px 0;
 }
 
 .form__group {
@@ -119,7 +119,7 @@
   background-position: center;
 }
 
-.review-form__message {
+.form__message {
   display: block;
   font-size: 18px;
   line-height: 26px;
@@ -127,6 +127,8 @@
   font-family: inherit;
   background-color: #f2f2f2;
   margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
   padding: 16px;
   width: 100%;
   height: 150px;
@@ -138,12 +140,21 @@
   }
 }
 
-.review-form__clarification {
+.form__submit {
+  display: block;
+  width: 100%;
+}
+
+.form__clarification {
   font-size: 12px;
   color: rgba(51, 51, 51, 0.6);
   text-align: right;
   text-transform: uppercase;
   margin: 3px 0 0;
+}
+
+.form__submit-wrapper {
+  margin-top: 56px;
 }
 
 @media (min-width: 768px) {
@@ -154,7 +165,7 @@
     gap: 50px 85px;
   }
 
-  .review-form__message {
+  .form__message {
     height: 160px;
   }
 
@@ -207,8 +218,25 @@
     font-size: 21px;
   }
 
-  .review-form__clarification {
-    margin-top: 23px;
+  .form__submit {
+    width: 324px;
+  }
+
+  .form__clarification {
+    margin-top: 0;
+  }
+
+  .form__submit-wrapper {
+    margin-top: 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .form__group--message {
+    max-width: 768px;
+    width: 100%;
+    margin: 0 auto;
   }
 }
 
@@ -227,5 +255,17 @@
     padding: 0 44px;
     grid-template-columns: repeat(4, 1fr);
     gap: 30px 0;
+  }
+
+  .form__group:nth-child(n+3) .form__group-title {
+    &::after,
+    &::before {
+      content: "";
+      width: 280px;
+    }
+  }
+
+  .form__submit {
+    width: 384px;
   }
 }

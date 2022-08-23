@@ -10,6 +10,10 @@
     background-image: url("../img/back-mobile-small.png");
     padding: 52px 0 67px;
   }
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/back-mobile@2x.jpg");
+  }
 }
 
 .welcome__img {
@@ -22,5 +26,24 @@
     background-image: url("../img/back-tablet.jpg");
     padding: 77px 0 91px;
     background-position: center top;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/back-tablet@2x.jpg");
+    }
+  }
+
+  .welcome__img {
+    width: 460px;
+    height: auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  .welcome {
+    background-image: url("../img/back-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/back-desktop@2x.jpg");
+    }
   }
 }
