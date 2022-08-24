@@ -126,7 +126,6 @@
   font-weight: 700;
   font-family: inherit;
   background-color: #f2f2f2;
-  margin-top: 20px;
   margin-left: auto;
   margin-right: auto;
   padding: 16px;
@@ -138,6 +137,10 @@
   &::placeholder {
     color: rgba(0, 0, 0, 0.3);
   }
+}
+
+.form__group-inner {
+  margin-top: 20px;
 }
 
 .form__submit {
@@ -233,10 +236,15 @@
     align-items: center;
   }
 
-  .form__group--message {
+  .form__group--message .form__group-inner {
     max-width: 768px;
     width: 100%;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .form__group-inner {
+    margin-top: 28px;
   }
 }
 
