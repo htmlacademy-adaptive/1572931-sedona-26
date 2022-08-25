@@ -27,6 +27,7 @@
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
+  cursor: pointer;
 }
 
 .title {
@@ -570,6 +571,7 @@
 .gallery__img {
   display: block;
   width: 100%;
+  height: auto;
   object-fit: cover;
   margin: 0 auto;
 }
@@ -649,6 +651,20 @@
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
+  position: relative;
+}
+.doubts__video-wrapper::after {
+  content: "";
+  position: absolute;
+  width: 48px;
+  height: 54px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url("../img/icons/video-play.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
 }
 
 .doubts__video {
