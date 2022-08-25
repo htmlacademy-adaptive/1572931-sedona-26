@@ -17,6 +17,21 @@
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 48px;
+    height: 54px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url("../img/icons/video-play.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+  }
 }
 
 .doubts__video {

@@ -56,8 +56,14 @@
 
         <ul class="gallery__list">
           <li class="gallery__item">
-            <img class="gallery__img" src="./img/lonesome-road.jpg" alt="Одинокое шоссе на закате." width="280"
-              height="280">
+            <picture>
+              <source media="(min-width: 1200px)"
+                srcset="./img/lonesome-road-desktop.jpg 1x, ./img/lonesome-road-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)"
+                srcset="./img/lonesome-road-tablet.jpg 1x, ./img/lonesome-road-tablet@2x.jpg 2x">
+              <img class="gallery__img" src="./img/lonesome-road-mobile.jpg"
+                srcset="./img/lonesome-road-mobile@2x.jpg 2x" alt="Одинокое шоссе на закате." width="280" height="280">
+            </picture>
             <div class="gallery__item-info">
               <div class="gallery__item-description">
                 <p class="gallery__item-name">Неродные просторы</p>
@@ -73,8 +79,12 @@
           </li>
 
           <li class="gallery__item">
-            <img class="gallery__img" src="./img/cactus.jpg" alt="Фотография кактуса на фоне гор." width="280"
-              height="280">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="./img/cactus-desktop.jpg 1x, ./img/cactus-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="./img/cactus-tablet.jpg 1x, ./img/cactus-tablet@2x.jpg 2x">
+              <img class="gallery__img" src="./img/cactus-mobile.jpg" srcset="./img/cactus-mobile@2x.jpg 2x"
+                alt="Фотография кактуса на фоне гор." width="280" height="280">
+            </picture>
             <div class="gallery__item-info">
               <div class="gallery__item-description">
                 <p class="gallery__item-name">Местная растительность</p>
@@ -90,8 +100,14 @@
           </li>
 
           <li class="gallery__item">
-            <img class="gallery__img" src="./img/wavy-road.jpg" alt="Фотография извилистой дороги в лесах." width="280"
-              height="280">
+            <picture>
+              <source media="(min-width: 1200px)"
+                srcset="./img/wavy-road-desktop.jpg 1x, ./img/wavy-road-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)"
+                srcset="./img/wavy-road-tablet.jpg 1x, ./img/wavy-road-tablet@2x.jpg 2x">
+              <img class="gallery__img" src="./img/wavy-road-mobile.jpg" srcset="./img/wavy-road-mobile@2x.jpg 2x"
+                alt="Фотография извилистой дороги в лесах." width="280" height="280">
+            </picture>
             <div class="gallery__item-info">
               <div class="gallery__item-description">
                 <p class="gallery__item-name">Дорога на север</p>
@@ -107,8 +123,14 @@
           </li>
 
           <li class="gallery__item">
-            <img class="gallery__img" src="./img/devils-bridge-gallery.jpg" alt="Мост дьявола." width="280"
-              height="280">
+            <picture>
+              <source media="(min-width: 1200px)"
+                srcset="./img/devils-bridge-gallery-desktop.jpg 1x, ./img/devils-bridge-gallery-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)"
+                srcset="./img/devils-bridge-gallery-tablet.jpg 1x, ./img/devils-bridge-gallery-tablet@2x.jpg 2x">
+              <img class="gallery__img" src="./img/devils-bridge-gallery-mobile.jpg"
+                srcset="./img/devils-bridge-gallery-mobile@2x.jpg" alt="Мост дьявола." width="280" height="280">
+            </picture>
             <div class="gallery__item-info">
               <div class="gallery__item-description">
                 <p class="gallery__item-name">Мост дьявола</p>
