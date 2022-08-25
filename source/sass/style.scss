@@ -1,5 +1,6 @@
 @use "./fonts.scss";
 @use "./global.scss";
+@use "./blocks/button.scss";
 @use "./blocks/title.scss";
 @use "./blocks/page.scss";
 @use "./blocks/main-container.scss";
@@ -22,4 +23,3 @@
 @use "./blocks/copyright.scss";
 @use "./blocks/toggle-button.scss";
 @use "./blocks/input-text.scss";
-@use "./blocks/button.scss";
