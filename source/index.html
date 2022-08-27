@@ -5,6 +5,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./img/favicons/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="./img/favicons/apple-icon-180x180.png">
+  <link rel="manifest" href="./manifest.webmanifest">
   <link rel="stylesheet" href="./css/style.css">
   <title>HTML Academy: Седона</title>
 </head>
@@ -12,7 +15,6 @@
 <body class="page__body">
   <div class="page__wrapper ">
     <header class="main-header">
-      <!-- main-navigation--closed | main-navigation--opened | main-nav--no-js -->
       <nav class="main-header__navigation main-navigation main-navigation--closed main-navigation--nojs">
         <a class="main-navigation__logo-link main-logo" href="#">
           <img class="main-logo__img" src="./img/sedona-logo.svg" alt="Логотип Седона." width="185" height="96">
@@ -44,11 +46,8 @@
 
       <section class="welcome">
         <h2 class="visually-hidden">Добро пожаловать в Седону!</h2>
-        <picture>
-          <source media="(min-width: 768px)" srcset="./img/welcome-text-big.svg">
-          <img class="welcome__img" src="./img/welcome-text-small.svg" alt="Добро пожаловать в Седону." width="282"
-            height="214">
-        </picture>
+        <img class="welcome__img" src="./img/welcome-text-small.svg" alt="Добро пожаловать в Седону." width="282"
+          height="214">
       </section>
 
       <section class="reasons">

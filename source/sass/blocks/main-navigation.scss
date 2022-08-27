@@ -6,8 +6,13 @@
   justify-content: center;
 }
 
+.main-navigation__list {
+  z-index: 2;
+}
+
 .main-navigation__toggle {
   margin: 0 18px 0 auto;
+  z-index: 3;
 }
 
 // Внешний вид кнопки-гамбургера
@@ -64,11 +69,16 @@
   left: 50%;
   top: 0;
   transform: translateX(-50%);
+  z-index: 1;
 }
 
 @media (min-width: 768px) {
   .main-navigation__toggle {
     display: none;
+  }
+
+  .main-navigation__logo-link {
+    z-index: 10;
   }
 }
 
