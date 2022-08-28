@@ -58,6 +58,7 @@
   .reasons__item {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 256px;
   }
 
   .reasons__img-wrapper {
