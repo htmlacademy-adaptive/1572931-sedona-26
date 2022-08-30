@@ -1,15 +1,24 @@
 .reason {
   max-width: 100%;
   text-align: center;
-  padding: 54px 15px 40px;
+  padding: 55px 15px 39px;
 
   &--primary {
     color: #ffffff;
     background-color: #81b3d2;
+
+    & br {
+      display: none;
+    }
   }
 
   &--secondary {
     background-color: #eeeeee;
+    padding: 25px 35px;
+
+    & br {
+      display: none;
+    }
   }
 }
 
@@ -29,9 +38,34 @@
 @media (min-width: 768px) {
   .reason {
     min-height: 256px;
+    padding: 42px 25px 44px;
+
+    &--primary br {
+      display: block;
+    }
+
+    &--secondary {
+      padding-left: 40px;
+      padding-right: 40px;
+
+      & br {
+        display: block;
+      }
+    }
   }
 
   .reason__title {
     font-size: 21px;
+  }
+
+  .reason__description {
+    margin-top: 23px;
+  }
+}
+
+
+@media (min-width: 1200px) {
+  .reason {
+    padding-top: 48px;
   }
 }

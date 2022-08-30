@@ -1,5 +1,5 @@
 .subscribe {
-  padding: 39px 20px 49px;
+  padding: 39px 18px 49px;
   text-align: center;
   max-width: 475px;
   margin: 0 auto;
@@ -13,21 +13,53 @@
 .subscribe__description {
   margin: 20px 0 0;
   text-transform: uppercase;
+
+  & br {
+    display: none;
+  }
 }
 
 
 .subscribe__button {
-  margin-top: 32px;
+  margin-top: 31px;
   display: block;
   text-decoration: none;
 }
 
 @media (min-width: 768px) {
+  .subscribe {
+    padding-top: 58px;
+    padding-left: 9px;
+    padding-right: 9px;
+    padding-bottom: 59px;
+  }
+
   .subscribe__button {
     width: 100%;
+    margin-top: 43px;
+    padding-top: 14px;
+    padding-bottom: 17px;
   }
 
   .subscribe__title {
     font-size: 30px;
+  }
+
+  .subscribe__description {
+    margin-top: 32px;
+
+    & br {
+      display: block;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .subscribe {
+    padding-bottom: 67px;
+  }
+
+  .subscribe__button {
+    margin-top: 49px;
   }
 }

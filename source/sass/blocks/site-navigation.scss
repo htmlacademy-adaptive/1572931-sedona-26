@@ -34,8 +34,18 @@
     line-height: 21px;
     color: #000000;
     background-color: transparent;
+    transition: all 0.2s;
 
-    &__link--active {
+    &:hover {
+      color: #81b3d2;
+    }
+
+    &:active {
+      color: #000000;
+      opacity: 0.3;
+    }
+
+    &--active {
       color: #766357;
     }
   }

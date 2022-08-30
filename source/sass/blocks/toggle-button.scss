@@ -5,4 +5,13 @@
   border: none;
   position: relative;
   cursor: pointer;
+  transition: all 0.2s;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }

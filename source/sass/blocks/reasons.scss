@@ -1,6 +1,21 @@
 .reasons__header {
-  padding: 32px 25px;
+  padding: 33px 25px;
   text-align: center;
+  position: relative;
+
+  @media (max-width: 767px) {
+    &::after {
+      content: "";
+      height: 37px;
+      background-image: url("../../img/triangle.svg");
+      background-repeat: no-repeat;
+      position: absolute;
+      bottom: -21px;
+      left: 0;
+      width: 100%;
+      background-position: center;
+    }
+  }
 }
 
 .reasons__header-title {
@@ -48,17 +63,26 @@
 
 @media (min-width: 768px) {
   .reasons__header {
-    padding: 32px 140px;
+    padding: 50px 140px 55px;
   }
 
   .reasons__header-title {
     font-size: 21px;
   }
 
+  .reasons__header-text {
+    margin-top: 29px;
+  }
+
   .reasons__item {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 256px;
+
+    &:nth-child(2n) .reasons__img-wrapper {
+      grid-column: 1 / 3;
+      grid-row: 1 / 2;
+    }
   }
 
   .reasons__img-wrapper {
@@ -77,6 +101,17 @@
     grid-column: 1 / -1;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1200px) {
+  .reasons__header {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 61px;
+    padding-bottom: 44px;
+    max-width: 485px;
+    margin: 0 auto;
   }
 }
 
