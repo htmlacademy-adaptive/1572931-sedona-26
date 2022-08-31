@@ -147,7 +147,6 @@
   opacity: 0.3;
 }
 
-// ================
 .form__message {
   display: block;
   font-size: 18px;
@@ -162,9 +161,20 @@
   height: 150px;
   resize: none;
   border: none;
+  transition: all 0.2s;
 
   &::placeholder {
     color: rgba(0, 0, 0, 0.3);
+  }
+
+  &:hover {
+    background-color: #e5e5e5;
+  }
+
+  &:focus {
+    background-color: #ffffff;
+    outline: 4px solid #e5e5e5;
+    outline-offset: -4px;
   }
 }
 
