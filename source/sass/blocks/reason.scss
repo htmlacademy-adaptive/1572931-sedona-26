@@ -6,19 +6,11 @@
   &--primary {
     color: #ffffff;
     background-color: #81b3d2;
-
-    & br {
-      display: none;
-    }
   }
 
   &--secondary {
     background-color: #eeeeee;
     padding: 25px 35px;
-
-    & br {
-      display: none;
-    }
   }
 }
 
@@ -40,17 +32,9 @@
     min-height: 256px;
     padding: 42px 25px 44px;
 
-    &--primary br {
-      display: block;
-    }
-
     &--secondary {
       padding-left: 40px;
       padding-right: 40px;
-
-      & br {
-        display: block;
-      }
     }
   }
 

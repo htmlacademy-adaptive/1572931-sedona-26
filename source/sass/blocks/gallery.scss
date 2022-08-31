@@ -30,7 +30,10 @@
   display: block;
   width: 23px;
   height: 21px;
-  background-image: url("../img/icons/like-icon.svg");
+}
+
+.gallery__item-like-icon {
+  opacity: 0.3;
 }
 
 .gallery__like-wrapper {
@@ -123,5 +126,10 @@
     right: 0;
     bottom: 0;
     color: #ffffff;
+  }
+
+  .gallery__item-like-icon {
+    opacity: 1;
+    fill: #ffffff;
   }
 }
