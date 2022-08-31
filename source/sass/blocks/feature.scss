@@ -10,6 +10,10 @@
 
   &--burger {
     background-image: url("../img/icons/feature-burger.svg");
+
+    & br {
+      display: none;
+    }
   }
 
   &--present {
@@ -28,7 +32,7 @@
 
 @media (min-width: 768px) {
   .feature {
-    padding: 159px 30px 30px;
+    padding: 159px 31px 30px;
     min-height: 330px;
     background-position: center 60px;
     text-align: center;
@@ -48,5 +52,13 @@
 
   .feature__title {
     font-size: 21px;
+  }
+
+  .feature__description {
+    margin-top: 23px;
+  }
+
+  .feature--burger br {
+    display: block;
   }
 }

@@ -3,12 +3,26 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-color: #144950;
+  background-color: #f2f2f2;
   padding: 90px 20px 85px;
+  position: relative;
 
   &--small {
-    background-image: url("../img/back-mobile-small.png");
     padding: 52px 0 67px;
+    background-position: 0 100%;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 57px;
+    width: 100%;
+    background-image: url("../img/triangles.svg");
+    background-position: center;
+    background-repeat: no-repeat;
   }
 
   @media (min-resolution: 2dppx) {
@@ -29,6 +43,11 @@
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/back-tablet@2x.jpg");
+    }
+
+    &--small {
+      padding: 95px 0 120px;
+      background-position: 0 100%;
     }
   }
 

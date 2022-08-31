@@ -13,10 +13,19 @@
 
 .main-footer__developed {
   margin-top: 40px;
+  transition: all 0.2s;
+
+  &:hover {
+    color: #81b3d2;
+  }
+
+  &:active {
+    color: #b3b3b3;
+  }
 }
 
 .main-footer__navigation {
-  margin: 35px 0 0;
+  margin: 33px 0 0;
 }
 
 @media (min-width: 768px) {
@@ -33,5 +42,13 @@
 
   .main-footer__developed {
     margin-top: 0;
+  }
+}
+
+
+@media (min-width: 1200px) {
+  .main-footer {
+    padding-left: 119px;
+    padding-right: 119px;
   }
 }

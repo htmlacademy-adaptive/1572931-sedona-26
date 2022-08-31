@@ -4,6 +4,14 @@
   background-color: transparent;
   border: none;
   position: relative;
-  z-index: 1;
   cursor: pointer;
+  transition: all 0.2s;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
