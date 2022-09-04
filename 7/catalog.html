@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./img/favicons/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="./img/favicons/apple-icon-180x180.png">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>HTML Academy: Седона</title>
+  <base href="https://htmlacademy-adaptive.github.io/1572931-sedona-26/7/">
+</head>
+
+<body class="page__body">
+  <div class="page__wrapper ">
+    <header class="main-header">
+      <nav class="main-header__navigation main-navigation main-navigation--closed main-navigation--nojs">
+        <a class="main-navigation__logo-link main-logo" href="./index.html">
+          <img class="main-logo__img" src="./img/sedona-logo.svg" alt="Логотип Седона." width="185" height="96">
+        </a>
+
+        <ul class="main-navigation__list site-navigation">
+          <li class="site-navigation__item">
+            <a class="site-navigation__link" href="./index.html">Главная</a>
+          </li>
+          <li class="site-navigation__item">
+            <a class="site-navigation__link site-navigation__link--active" href="#">Фото и видео</a>
+          </li>
+          <li class="site-navigation__item">
+            <a class="site-navigation__link" href="./form.html">Форма отзыва</a>
+          </li>
+          <li class="site-navigation__item">
+            <a class="site-navigation__link" href="https://htmlacademy.ru/intensive/adaptive">HTML academy</a>
+          </li>
+        </ul>
+
+        <button class="main-navigation__toggle toggle-button" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+      </nav>
+    </header>
+
+    <main class="main-container">
+      <h1 class="visually-hidden">Галерея фото и видео о Седоне</h1>
+
+      <section class="welcome welcome--small">
+        <h2 class="visually-hidden">Добро пожаловать в Седону!</h2>
+        <img class="welcome__img" src="./img/sedona.png" alt="Добро пожаловать в Седону." width="229" height="39">
+      </section>
+
+      <section class="gallery">
+        <h2 class="gallery__title title">Фото и видео</h2>
+        <p class="gallery__text">
+          Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о
+          политике и экономике.
+        </p>
+
+        <ul class="gallery__list">
+          <li class="gallery__item">
+            <a class="gallery__item-link" href="#">
+              <picture>
+                <source media="(min-width: 1200px)"
+                  srcset="./img/lonesome-road-desktop.jpg 1x, ./img/lonesome-road-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)"
+                  srcset="./img/lonesome-road-tablet.jpg 1x, ./img/lonesome-road-tablet@2x.jpg 2x">
+                <img class="gallery__img" src="./img/lonesome-road-mobile.jpg"
+                  srcset="./img/lonesome-road-mobile@2x.jpg 2x" alt="Одинокое шоссе на закате." width="280"
+                  height="280">
+              </picture>
+            </a>
+            <div class="gallery__item-info">
+              <div class="gallery__item-description">
+                <p class="gallery__item-name">Неродные просторы</p>
+                <p class="gallery__item-author">Автор фото: Борис</p>
+              </div>
+              <div class="gallery__like-wrapper">
+                <a class="gallery__item-like-btn">
+                  <span class="visually-hidden">Поставить лайк фотографии</span>
+                  <svg class="gallery__item-like-icon" width="23" height="21" viewBox="0 0 23 21"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" />
+                  </svg>
+                </a>
+                <p class="gallery__item-likes">1350</p>
+              </div>
+            </div>
+          </li>
+
+          <li class="gallery__item">
+            <a class="gallery__item-link" href="#">
+              <picture>
+                <source media="(min-width: 1200px)"
+                  srcset="./img/cactus-desktop.jpg 1x, ./img/cactus-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="./img/cactus-tablet.jpg 1x, ./img/cactus-tablet@2x.jpg 2x">
+                <img class="gallery__img" src="./img/cactus-mobile.jpg" srcset="./img/cactus-mobile@2x.jpg 2x"
+                  alt="Фотография кактуса на фоне гор." width="280" height="280">
+              </picture>
+            </a>
+            <div class="gallery__item-info">
+              <div class="gallery__item-description">
+                <p class="gallery__item-name">Местная растительность</p>
+                <p class="gallery__item-author">Автор фото: Сергей</p>
+              </div>
+              <div class="gallery__like-wrapper">
+                <a class="gallery__item-like-btn">
+                  <span class="visually-hidden">Поставить лайк фотографии</span>
+                  <svg class="gallery__item-like-icon" width="23" height="21" viewBox="0 0 23 21"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" />
+                  </svg>
+                </a>
+                <p class="gallery__item-likes">143</p>
+              </div>
+            </div>
+          </li>
+
+          <li class="gallery__item">
+            <a class="gallery__item-link" href="#">
+              <picture>
+                <source media="(min-width: 1200px)"
+                  srcset="./img/wavy-road-desktop.jpg 1x, ./img/wavy-road-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)"
+                  srcset="./img/wavy-road-tablet.jpg 1x, ./img/wavy-road-tablet@2x.jpg 2x">
+                <img class="gallery__img" src="./img/wavy-road-mobile.jpg" srcset="./img/wavy-road-mobile@2x.jpg 2x"
+                  alt="Фотография извилистой дороги в лесах." width="280" height="280">
+              </picture>
+            </a>
+            <div class="gallery__item-info">
+              <div class="gallery__item-description">
+                <p class="gallery__item-name">Дорога на север</p>
+                <p class="gallery__item-author">Автор фото: Петр</p>
+              </div>
+              <div class="gallery__like-wrapper">
+                <a class="gallery__item-like-btn">
+                  <span class="visually-hidden">Поставить лайк фотографии</span>
+                  <svg class="gallery__item-like-icon" width="23" height="21" viewBox="0 0 23 21"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" />
+                  </svg>
+                </a>
+                <p class="gallery__item-likes">96</p>
+              </div>
+            </div>
+          </li>
+
+          <li class="gallery__item">
+            <a class="gallery__item-link" href="#">
+              <picture>
+                <source media="(min-width: 1200px)"
+                  srcset="./img/devils-bridge-gallery-desktop.jpg 1x, ./img/devils-bridge-gallery-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)"
+                  srcset="./img/devils-bridge-gallery-tablet.jpg 1x, ./img/devils-bridge-gallery-tablet@2x.jpg 2x">
+                <img class="gallery__img" src="./img/devils-bridge-gallery-mobile.jpg"
+                  srcset="./img/devils-bridge-gallery-mobile@2x.jpg" alt="Мост дьявола." width="280" height="280">
+              </picture>
+            </a>
+            <div class="gallery__item-info">
+              <div class="gallery__item-description">
+                <p class="gallery__item-name">Мост дьявола</p>
+                <p class="gallery__item-author">Автор фото: Антон</p>
+              </div>
+              <div class="gallery__like-wrapper">
+                <a class="gallery__item-like-btn">
+                  <span class="visually-hidden">Поставить лайк фотографии</span>
+                  <svg class="gallery__item-like-icon" width="23" height="21" viewBox="0 0 23 21"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" />
+                  </svg>
+                </a>
+                <p class="gallery__item-likes">254</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section class="doubts">
+        <h2 class="doubts__title title">Все еще сомневаетесь?</h2>
+        <p class="doubts__text">
+          Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!
+        </p>
+        <div class="doubts__video-wrapper">
+          <video class="doubts__video" src="#" width="800" height="500" poster="./img/video-800x500.jpg"></video>
+        </div>
+      </section>
+    </main>
+
+    <footer class="main-footer">
+      <p class="main-footer__hashtag">#visitsedona</p>
+
+      <ul class="main-footer__navigation social-navigation">
+        <li class="social-navigation__item">
+          <a class="social-navigation__link" href="https://vk.com/htmlacademy" target="_blank">
+            <span class="visually-hidden">vk</span>
+            <svg class="social-navigation__logo" width="24" height="14">
+              <use xlink:href="./img/icons/sprite.svg#vk-icon"></use>
+            </svg>
+          </a>
+        </li>
+
+        <li class="social-navigation__item">
+          <a class="social-navigation__link" href="https://t.me/htmlacademy" target="_blank">
+            <span class="visually-hidden">telegram</span>
+            <svg class="social-navigation__logo" width="22" height="18">
+              <use xlink:href="./img/icons/sprite.svg#tg-icon"></use>
+            </svg>
+          </a>
+        </li>
+
+        <li class="social-navigation__item">
+          <a class="social-navigation__link" href="https://www.youtube.com/user/htmlacademyru" target="_blank">
+            <span class="visually-hidden">youtube</span>
+            <svg class="social-navigation__logo" width="20" height="14">
+              <use xlink:href="./img/icons/sprite.svg#yt-icon"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+
+      <a class="main-footer__developed copyright" href="https://htmlacademy.ru/intensive/adaptive">
+        <span class="copyright__text">Разработано</span>
+        <svg class="copyright__img" width="27" height="35" viewBox="0 0 27 35" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9 12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1 18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4 20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z"
+            fill="currentColor" />
+        </svg>
+      </a>
+    </footer>
+  </div>
+  <script src="./js/app.js"></script>
+</body>
+
+</html>
