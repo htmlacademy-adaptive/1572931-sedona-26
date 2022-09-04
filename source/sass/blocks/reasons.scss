@@ -116,7 +116,7 @@
 }
 
 @media (max-width: 768px) {
-  .reasons__sublist-item {
+  .reasons__sublist-item:not(:last-child) {
     border-bottom: 1px solid #d6d6d6;
   }
 }
