@@ -16,3 +16,9 @@
     outline-offset: -4px;
   }
 }
+
+@media (min-width: 1200px) {
+  .input-text {
+    max-width: 430px;
+  }
+}

@@ -8,8 +8,9 @@
 }
 
 .doubts__text {
-  margin: 20px 0 0;
+  margin: 27px auto 0;
   text-transform: uppercase;
+  max-width: 250px;
 }
 
 .doubts__video-wrapper {
@@ -25,7 +26,7 @@
     width: 48px;
     height: 54px;
     top: 50%;
-    left: 50%;
+    left: 53%;
     transform: translate(-50%, -50%);
     background-image: url("../img/icons/video-play.svg");
     background-repeat: no-repeat;
@@ -49,7 +50,7 @@
 
 @media (min-width: 768px) {
   .doubts {
-    padding: 58px 60px 40px;
+    padding: 56px 60px 40px;
   }
 
   .doubts__title {
@@ -57,12 +58,25 @@
   }
 
   .doubts__video-wrapper {
-    margin-top: 66px;
+    margin-top: 89px;
+
+    &::after {
+      left: 50%;
+    }
+  }
+
+  .doubts__text {
+    margin-top: 32px;
+    max-width: 450px;
   }
 }
 
 @media (min-width: 1200px) {
   .doubts {
-    padding: 58px 200px 40px;
+    padding: 60px 200px 84px;
+  }
+
+  .doubts__video-wrapper {
+    margin-top: 87px;
   }
 }
