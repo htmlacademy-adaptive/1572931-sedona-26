@@ -48,12 +48,17 @@
     &--small {
       padding: 95px 0 117px;
       background-position: 0 100%;
+
+      .welcome__img {
+        width: 457px;
+        height: 78px;
+      }
     }
   }
 
   .welcome__img {
-    width: 457px;
-    height: 78px;
+    width: 461px;
+    height: 350px;
   }
 }
 
