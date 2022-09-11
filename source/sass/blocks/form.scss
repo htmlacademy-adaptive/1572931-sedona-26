@@ -1,9 +1,10 @@
 .form {
-  padding: 0 20px 0;
+  // padding: 0 20px 0;
+  padding: 0;
 }
 
 .form__group {
-  padding: 24px 0 40px;
+  padding: 24px 20px 40px;
   margin: 0;
   border: none;
   border-top: 1px solid #e5e5e5;
@@ -82,7 +83,7 @@
   gap: 16px;
 }
 
-.form__radio + .form__control-label::before {
+.form__radio+.form__control-label::before {
   content: "";
   width: 46px;
   height: 46px;
@@ -94,25 +95,25 @@
   flex-shrink: 0;
 }
 
-.form__radio + .form__control-label:hover::before,
-.form__checkbox + .form__control-label:hover::before {
+.form__radio+.form__control-label:hover::before,
+.form__checkbox+.form__control-label:hover::before {
   background-color: #e5e5e5;
 }
 
-.form__control-input:focus + .form__control-label::before {
+.form__control-input:focus+.form__control-label::before {
   background-color: #e5e5e5;
 }
 
-.form__radio + .form__control-label:active::before,
-.form__checkbox + .form__control-label:active::before {
+.form__radio+.form__control-label:active::before,
+.form__checkbox+.form__control-label:active::before {
   background-color: #d5d5d5;
 }
 
-.form__radio + .form__control-label:active::after {
+.form__radio+.form__control-label:active::after {
   opacity: 0.3;
 }
 
-.form__radio:checked + .form__control-label::after {
+.form__radio:checked+.form__control-label::after {
   content: "";
   position: absolute;
   background-color: #000000;
@@ -123,7 +124,7 @@
   border-radius: 50%;
 }
 
-.form__checkbox + .form__control-label::before {
+.form__checkbox+.form__control-label::before {
   content: "";
   width: 46px;
   height: 46px;
@@ -135,7 +136,7 @@
   flex-shrink: 0;
 }
 
-.form__checkbox:checked + .form__control-label::after {
+.form__checkbox:checked+.form__control-label::after {
   content: "";
   width: 46px;
   height: 46px;
@@ -147,7 +148,7 @@
   background-position: center;
 }
 
-.form__checkbox:checked + .form__control-label:active::after {
+.form__checkbox:checked+.form__control-label:active::after {
   opacity: 0.3;
 }
 
@@ -338,6 +339,7 @@
   }
 
   .form__group:nth-child(n+3) .form__group-title {
+
     &::after,
     &::before {
       content: "";

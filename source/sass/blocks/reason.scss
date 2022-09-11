@@ -1,7 +1,7 @@
 .reason {
   max-width: 100%;
   text-align: center;
-  padding: 55px 15px 39px;
+  padding: 37px 19px 37px;
 
   &--primary {
     color: #ffffff;
@@ -11,6 +11,10 @@
   &--secondary {
     background-color: #eeeeee;
     padding: 25px 35px;
+  }
+
+  br {
+    display: none;
   }
 }
 
@@ -36,10 +40,15 @@
       padding-left: 40px;
       padding-right: 40px;
     }
+
+    br {
+      display: block;
+    }
   }
 
   .reason__title {
     font-size: 21px;
+    padding: 0 10px;
   }
 
   .reason__description {
@@ -49,7 +58,20 @@
 
 
 @media (min-width: 1200px) {
-  .reason {
-    padding-top: 48px;
+  .reason br {
+    display: none;
+  }
+
+  .reason--primary {
+    padding: 48px 60px 55px;
+  }
+
+  .reason--secondary {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .reason__title {
+    padding: 0 62px;
   }
 }

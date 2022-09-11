@@ -1,7 +1,3 @@
-.map {
-  padding-bottom: 10px;
-}
-
 .map__img {
   width: 100%;
   object-fit: cover;
@@ -10,4 +6,10 @@
 .map__frame {
   display: block;
   width: 100%;
+}
+
+@media (max-width: 767px) {
+  .map {
+    padding-bottom: 10px;
+  }
 }
