@@ -1,3 +1,5 @@
+@import "../variables.scss";
+
 .reason {
   max-width: 100%;
   text-align: center;
@@ -31,7 +33,7 @@
   text-transform: uppercase;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .reason {
     min-height: 256px;
     padding: 42px 25px 44px;
@@ -57,7 +59,7 @@
 }
 
 
-@media (min-width: 1200px) {
+@media (min-width: $desktop-width) {
   .reason br {
     display: none;
   }

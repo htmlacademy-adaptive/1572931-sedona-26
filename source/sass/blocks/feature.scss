@@ -1,3 +1,5 @@
+@import "../variables.scss";
+
 .feature {
   padding: 8px 0 0 47px;
   background-repeat: no-repeat;
@@ -30,7 +32,7 @@
   text-transform: uppercase;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .feature {
     padding: 159px 31px 30px;
     min-height: 330px;

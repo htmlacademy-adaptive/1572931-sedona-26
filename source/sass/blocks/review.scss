@@ -1,3 +1,5 @@
+@import "../variables.scss";
+
 .review__header {
   padding: 37px 20px 28px;
   text-align: center;
@@ -12,7 +14,7 @@
   text-transform: uppercase;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .review__header {
     padding: 64px 60px 106px;
   }
@@ -28,7 +30,7 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: $desktop-width) {
   .review__header {
     padding-top: 112px;
     padding-bottom: 70px;

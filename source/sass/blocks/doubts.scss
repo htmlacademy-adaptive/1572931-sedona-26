@@ -1,3 +1,5 @@
+@import "../variables.scss";
+
 .doubts {
   padding: 17px 20px 0;
   text-align: center;
@@ -43,13 +45,13 @@
   cursor: pointer;
 }
 
-@media (max-width: 767px) {
+@media (max-width: ($tablet-width - 1px)) {
   .doubts__video {
     height: auto;
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .doubts {
     padding: 56px 60px 40px;
   }
@@ -72,7 +74,7 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: $desktop-width) {
   .doubts {
     padding: 60px 200px 84px;
   }

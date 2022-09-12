@@ -1,3 +1,5 @@
+@import "../variables.scss";
+
 .subscribe {
   padding: 39px 18px 49px;
   text-align: center;
@@ -26,7 +28,7 @@
   text-decoration: none;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .subscribe {
     padding-top: 58px;
     padding-left: 9px;
@@ -54,7 +56,7 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: $desktop-width) {
   .subscribe {
     padding-bottom: 67px;
   }
