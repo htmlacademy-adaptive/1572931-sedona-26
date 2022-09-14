@@ -1,5 +1,7 @@
+@import "../variables.scss";
+
 .gallery {
-  padding: 37px 20px 0;
+  padding: 33px 20px 0;
 }
 
 .gallery__title {
@@ -9,19 +11,19 @@
 
 .gallery__text {
   text-align: center;
-  margin: 20px 0 0;
+  margin: 25px 0 0;
   text-transform: uppercase;
 }
 
 .gallery__list {
-  margin: 25px 0 0;
+  margin: 40px 0 0;
   padding: 0;
   list-style: none;
   border-top: 1px solid #e5e5e5;
 }
 
 .gallery__item {
-  padding: 25px 0 25px;
+  padding: 24px 0 25px;
   border-bottom: 1px solid #e5e5e5;
   position: relative;
 }
@@ -44,7 +46,7 @@
 }
 
 .gallery__item-info {
-  padding-top: 15px;
+  padding-top: 16px;
 }
 
 .gallery__item-name {
@@ -54,7 +56,7 @@
 }
 
 .gallery__item-author {
-  margin: 5px 0 0;
+  margin: 1px 0 0;
 }
 
 .gallery__item-likes {
@@ -71,7 +73,7 @@
   background-color: #f2f2f2;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .gallery {
     padding: 66px 60px 0;
   }
@@ -83,6 +85,7 @@
   .gallery__list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    margin-top: 80px;
   }
 
   .gallery__item {
@@ -91,12 +94,19 @@
     background-color: #f2f2f2;
   }
 
+  .gallery__text {
+    margin-top: 32px;
+    max-width: 430px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .gallery__item:first-child {
     grid-column: span 2;
   }
 
   .gallery__item-info {
-    padding: 20px 20px 15px;
+    padding: 22px 20px 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -104,15 +114,18 @@
 
   .gallery__like-wrapper {
     margin: 0;
+    gap: 10px;
+    margin-top: -8px;
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: $desktop-width) {
   .gallery {
-    padding: 66px 0 0;
+    padding: 98px 0 0;
   }
 
   .gallery__list {
+    margin-top: 88px;
     grid-template-columns: repeat(3, 1fr);
   }
 
@@ -126,6 +139,7 @@
     right: 0;
     bottom: 0;
     color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.3);
   }
 
   .gallery__item-like-icon {

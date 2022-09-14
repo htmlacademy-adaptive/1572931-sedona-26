@@ -1,3 +1,5 @@
+@import "../variables.scss";
+
 .doubts {
   padding: 17px 20px 0;
   text-align: center;
@@ -8,8 +10,9 @@
 }
 
 .doubts__text {
-  margin: 20px 0 0;
+  margin: 27px auto 0;
   text-transform: uppercase;
+  max-width: 250px;
 }
 
 .doubts__video-wrapper {
@@ -18,20 +21,6 @@
   margin-left: auto;
   margin-right: auto;
   position: relative;
-
-  &::after {
-    content: "";
-    position: absolute;
-    width: 48px;
-    height: 54px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-image: url("../img/icons/video-play.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    cursor: pointer;
-  }
 }
 
 .doubts__video {
@@ -41,15 +30,30 @@
   min-height: 177px;
 }
 
-@media (max-width: 767px) {
+.doubts__video-play-button {
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  width: 48px;
+  height: 54px;
+  top: 50%;
+  left: 53%;
+  transform: translate(-50%, -50%);
+  background-image: url("../img/icons/video-play.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+@media (max-width: ($tablet-width - 1px)) {
   .doubts__video {
     height: auto;
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .doubts {
-    padding: 58px 60px 40px;
+    padding: 56px 60px 40px;
   }
 
   .doubts__title {
@@ -57,12 +61,25 @@
   }
 
   .doubts__video-wrapper {
-    margin-top: 66px;
+    margin-top: 89px;
+  }
+
+  .doubts__video-play-button {
+    left: 50%;
+  }
+
+  .doubts__text {
+    margin-top: 32px;
+    max-width: 450px;
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: $desktop-width) {
   .doubts {
-    padding: 58px 200px 40px;
+    padding: 60px 200px 84px;
+  }
+
+  .doubts__video-wrapper {
+    margin-top: 87px;
   }
 }

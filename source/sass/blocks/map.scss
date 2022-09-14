@@ -1,3 +1,5 @@
+@import "../variables.scss";
+
 .map__img {
   width: 100%;
   object-fit: cover;
@@ -6,4 +8,10 @@
 .map__frame {
   display: block;
   width: 100%;
+}
+
+@media (max-width: ($tablet-width - 1px)) {
+  .map {
+    padding-bottom: 10px;
+  }
 }

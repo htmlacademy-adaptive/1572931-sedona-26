@@ -1,5 +1,7 @@
+@import "../variables.scss";
+
 .main-footer {
-  padding: 39px 18px 23px;
+  padding: 29px 18px 23px;
 }
 
 .main-footer__hashtag {
@@ -28,7 +30,7 @@
   margin: 33px 0 0;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .main-footer {
     display: flex;
     align-items: center;
@@ -38,6 +40,7 @@
 
   .main-footer__navigation {
     margin: 0;
+    margin-left: -7px;
   }
 
   .main-footer__developed {
@@ -46,7 +49,7 @@
 }
 
 
-@media (min-width: 1200px) {
+@media (min-width: $desktop-width) {
   .main-footer {
     padding-left: 119px;
     padding-right: 119px;

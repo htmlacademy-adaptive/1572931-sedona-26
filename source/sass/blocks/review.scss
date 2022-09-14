@@ -1,3 +1,5 @@
+@import "../variables.scss";
+
 .review__header {
   padding: 37px 20px 28px;
   text-align: center;
@@ -8,16 +10,33 @@
 }
 
 .review__header-text {
-  margin: 20px 0 0;
+  margin: 23px 0 0;
   text-transform: uppercase;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .review__header {
-    padding: 64px 60px 102px;
+    padding: 64px 60px 106px;
   }
 
   .review__header-title {
     font-size: 30px;
+  }
+
+  .review__header-text {
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .review__header {
+    padding-top: 112px;
+    padding-bottom: 70px;
+  }
+
+  .review__header-text {
+    margin-top: 33px;
   }
 }
