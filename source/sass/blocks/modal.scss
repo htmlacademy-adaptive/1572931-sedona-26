@@ -71,10 +71,39 @@
 
 @media (min-width: $tablet-width) {
   .modal__inner {
-    padding: 50px 47px 49px;
+    padding: 48px 47px 49px;
+  }
+
+  .modal__title {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .modal__text {
+    margin-top: 24px;
   }
 
   .modal__button {
     width: 272px;
+    margin-top: 45px;
+  }
+
+  .modal--success {
+    .modal__inner {
+      max-width: 640px;
+    }
+
+    .modal__content-wrapper {
+      padding: 45px 98px 49px;
+    }
+
+    .modal__button-wrapper {
+      padding: 44px 91px;
+      margin-top: 0;
+    }
+
+    .modal__button {
+      letter-spacing: 2px;
+    }
   }
 }
