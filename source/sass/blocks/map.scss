@@ -1,8 +1,9 @@
 @import "../variables.scss";
 
-.map__img {
-  width: 100%;
-  object-fit: cover;
+.map {
+  background-image: url("../img/map/map-desktop.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .map__frame {
