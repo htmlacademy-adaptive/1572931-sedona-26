@@ -84,7 +84,6 @@
   .reasons__item {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 256px;
 
     &:nth-child(2n) .reasons__img-wrapper {
       grid-column: 1 / 3;

@@ -95,13 +95,15 @@
   display: flex;
   align-items: center;
   gap: 16px;
+  padding-left: 62px;
+  min-height: 46px;
 }
 
 .form__radio + .form__control-label::before {
   content: "";
   width: 46px;
   height: 46px;
-  display: inline-block;
+  position: absolute;
   left: 0;
   top: 0;
   border-radius: 50%;
@@ -142,7 +144,7 @@
   content: "";
   width: 46px;
   height: 46px;
-  display: inline-block;
+  position: absolute;
   left: 0;
   top: 0;
   border-radius: 4px;

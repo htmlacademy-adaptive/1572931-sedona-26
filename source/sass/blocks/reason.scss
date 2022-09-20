@@ -8,15 +8,19 @@
   &--primary {
     color: #ffffff;
     background-color: #81b3d2;
+
+    br {
+      display: none;
+    }
   }
 
   &--secondary {
     background-color: #eeeeee;
     padding: 25px 35px;
-  }
 
-  br {
-    display: none;
+    br {
+      display: none;
+    }
   }
 }
 
@@ -41,10 +45,10 @@
     &--secondary {
       padding-left: 40px;
       padding-right: 40px;
-    }
 
-    br {
-      display: block;
+      br {
+        display: block;
+      }
     }
   }
 
@@ -60,17 +64,26 @@
 
 
 @media (min-width: $desktop-width) {
-  .reason br {
-    display: none;
-  }
-
   .reason--primary {
     padding: 48px 60px 55px;
+
+    br {
+      display: block;
+    }
   }
 
   .reason--secondary {
     padding-left: 60px;
     padding-right: 60px;
+
+    br {
+      display: none;
+    }
+
+    &:nth-child(1) {
+      padding-left: 50px;
+      padding-right: 50px;
+    }
   }
 
   .reason__title {
