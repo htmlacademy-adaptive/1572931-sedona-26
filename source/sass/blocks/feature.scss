@@ -20,6 +20,10 @@
 
   &--present {
     background-image: url("../img/icons/feature-present.svg");
+
+    & br {
+      display: none;
+    }
   }
 }
 
@@ -61,6 +65,17 @@
   }
 
   .feature--burger br {
+    display: block;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .feature {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .feature--present br {
     display: block;
   }
 }
